@@ -13,49 +13,100 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="cvdanny.css" />
-    <title>CV</title>
+    <link rel="stylesheet" href="style.css" />
+    <title>Danny Burneo</title>
   </head>
-
   <body>
-    <nav>
-      <a href="#work">MY WORK</a>
-      <a href="#about">ABOUT</a>
-      <a href="#shv2">CONTACT</a>
-    </nav>
-
-    <header>
-      <h1>Hello World, Soy Danny</h1>
-      <img id="profile_image" src="yes.jpg" alt="Me" />
-      <button id="download_button">DOWNLOAD CV</button>
+    <header class="header">
+      <nav class="header__nav">
+        <a href="#work-div" class="header__a">MY WORK</a>
+        <a href="#about-div" class="header__a">ABOUT</a>
+        <a href="#contact-div" class="header__a">CONTACT</a>
+      </nav>
     </header>
 
-    <section id="skills">
-      <h2 class="sh">My skills</h2>
-    </section>
-
-    <section id="work">
-      <h2 class="sh">Work</h2>
-      <ul>
-        <li>Condor</li>
-        <p>
+    <div class="title-div">
+      <div class="title-div__square"></div>
+      <div class="title-div__heading">
+        <h1>
+          Hello World,<br />
+          Soy<br />Danny
+        </h1>
+        <button>DOWNLOAD CV</button>
+      </div>
+      <div class="title-div__img-container">
+        <img src="Used icons-images/me.jpg" alt="Me" />
+      </div>
+    </div>
+    <div class="skills-div">
+      <div class="skills-div__square"></div>
+      <div class="skills-div__mainsquare">
+        <div class="skills-div__content">
+          <h2>My skills</h2>
+          <img src="Used icons-images/Github.png" alt="github logo" /><img
+            src="Used icons-images/figma.png"
+            alt="figma logo"
+          /><img src="Used icons-images/sql.png" alt="sql logo" /><img
+            src="Used icons-images/java.png"
+            alt="java logo"
+          /><img src="Used icons-images/C.png" alt="c logo" /><img
+            src="Used icons-images/Python-logo-notext.svg.png"
+            alt="python logo"
+          /><img src="Used icons-images/unity.png" alt="unity logo" /><img
+            src="Used icons-images/refactoring.png"
+            alt="refactoring techniques logo"
+          /><img
+            src="Used icons-images/front end logos.png"
+            alt="html css and javascript logo"
+            class="skills-div__content--frontendimg"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="work-title">
+      <h2>Work</h2>
+    </div>
+    <div class="work-div">
+      <div class="div-title">
+        <p class="work-div__job-title">Condor</p>
+        <p class="fecha">2022-2023</p>
+      </div>
+      <div class="div-description">
+        <p class="work-div__job-description">
           Proyecto multiplataforma de la materia de Ingenieria de software 1 y 2
           (ESPOL).
         </p>
-
-        <li>Ayudante de laboratorio</li>
-        <p>Aplicacion de escritorio para el registro de estudiantes (ESPOL).</p>
-
-        <li>Deloitte</li>
-        <p>Practicas de contabilidad en el departamento de recursos humanos.</p>
-
-        <li>Comercio</li>
-        <p>Negocio familiar de venta y distribucion de helados.</p>
-      </ul>
-    </section>
-
-    <section id="about">
-      <h2 class="sh">About</h2>
+      </div>
+      <div class="div-title">
+        <p class="work-div__job-title">Ayudante de laboratorio</p>
+        <p class="fecha">2022</p>
+      </div>
+      <div class="div-description">
+        <p class="work-div__job-description">
+          Aplicacion de escritorio para el registro de estudiantes (ESPOL).
+        </p>
+      </div>
+      <div class="div-title">
+        <p class="work-div__job-title">Deloitte</p>
+        <p class="fecha">2018</p>
+      </div>
+      <div class="div-description">
+        <p class="work-div__job-description">
+          Practicas de contabilidad en el departamento de recursos humanos.
+        </p>
+      </div>
+      <div class="div-title">
+        <p class="work-div__job-title">Comercio</p>
+        <p class="fecha">2017-2020</p>
+      </div>
+      <div class="div-description">
+        <p class="work-div__job-description">
+          Negocio familiar de venta y distribucion de helados.
+        </p>
+      </div>
+    </div>
+    <div class="about-div">
+      <h2>About</h2>
       <p>
         Soy un estudiante de Ingenieria de computacion en la Escuela Superior
         Politecnica del litoral (ESPOL) con un gran sentido del liderazgo y
@@ -67,7 +118,7 @@
         problema en trabajar en algo que no se, ya que siempre encuentro la
         manera de adaptarme.
       </p>
-      <img src="landscape.jpg" alt="Me" />
+      <img src="Used icons-images/landscape.jpg" alt="landscape" />
       <p>
         He tenido la oportunidad de trabajar en distintos lugares a mi corta
         edad, por lo que no soy un novato. Tengo conocimientos de aplicaciones
@@ -79,41 +130,59 @@
         manejo de github, figma y mucho mas.... Espero que podamos trabajar
         juntos muy pronto!
       </p>
-    </section>
-  </body>
-  <footer>
-    <h2 id="shv2">Contact me.</h2>
-    <span id="myinfo">
-      <h3>Danny Burneo</h3>
-      <h4>PROGRAMADOR</h4>
-      <p>Say Hello, on Skype dannyburneo2002</p>
-    </span>
-    <div id="emailme">
-      <input
-        class="input"
-        type="text"
-        name="firstname"
-        placeholder="What is your name?*"
-        maxlength="15"
-        required
-      />
-      <input
-        class="input"
-        type="email"
-        name="email"
-        placeholder="What is your email?*"
-        maxlength="25"
-        required
-      />
-      <input
-        class="input"
-        type="text"
-        name="message"
-        placeholder="Write your message here*"
-        maxlength="120"
-        required
-      />
-      <button id="send_button">SEND MESSAGE</button>
+      <img src="Used icons-images/Untitled.jpg" alt="sign" class="sign" />
     </div>
-  </footer>
+
+    <footer class="footer">
+      <div class="contact-div">
+        <h2>Contact me.</h2>
+        <h3>Danny Burneo</h3>
+        <h4>PROGRAMADOR</h4>
+        <a href="https://www.facebook.com/danny.burneo/" target="_blank"
+          ><img src="Used icons-images/facebook32.png" alt="facebook32"
+        /></a>
+        <a
+          href="https://www.linkedin.com/in/danny-jes%C3%BAs-burneo-esp%C3%ADn-55b528245/"
+          target="_blank"
+          ><img src="Used icons-images/linkedin32.png" alt=""
+        /></a>
+        <a href="https://twitter.com/The_Velika" target="_blank"
+          ><img src="Used icons-images/twitter32.png" alt=""
+        /></a>
+        <a href="#" target="_blank"
+          ><img src="Used icons-images/instagram32.png" alt=""
+        /></a>
+        <p>Say Hello, on Skype dannyburneo2002</p>
+      </div>
+      <div class="form-div">
+        <div>
+          <img src="Used icons-images/peaceful.jpg" alt="Peaceful image" />
+        </div>
+        <form action="">
+          <input
+            type="text"
+            name="firstname"
+            placeholder="What is your name?*"
+            maxlength="15"
+            required
+          />
+          <input
+            type="email"
+            name="email"
+            placeholder="What is your email?*"
+            maxlength="25"
+            required
+          />
+          <input
+            type="text"
+            name="message"
+            placeholder="Write your message here*"
+            maxlength="120"
+            required
+          />
+          <button>SEND MESSAGE</button>
+        </form>
+      </div>
+    </footer>
+  </body>
 </html>
