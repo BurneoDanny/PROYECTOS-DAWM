@@ -19,23 +19,26 @@
   <body>
     <header class="header">
       <nav class="header__nav">
-        <a href="#work-div" class="header__a">MY WORK</a>
+        <a href="#work-title" class="header__a">MY WORK</a>
         <a href="#about-div" class="header__a">ABOUT</a>
-        <a href="#contact-div" class="header__a">CONTACT</a>
+        <a href="#footer" class="header__a">CONTACT</a>
       </nav>
     </header>
-
-    <div class="title-div">
-      <div class="title-div__square"></div>
-      <div class="title-div__heading">
+    <div class="title__img-container--hidden">
+      <img src="Used icons-images/me.jpg" alt="Me" />
+    </div>
+    <div></div>
+    <div class="title">
+      <div class="title__main-div">
+        <div class="title__square"></div>
         <h1>
           Hello World,<br />
           Soy<br />Danny
         </h1>
         <button>DOWNLOAD CV</button>
-      </div>
-      <div class="title-div__img-container">
-        <img src="Used icons-images/me.jpg" alt="Me" />
+        <div class="title__img-container">
+          <img src="Used icons-images/me.jpg" alt="Me" />
+        </div>
       </div>
     </div>
     <div class="skills-div">
@@ -63,7 +66,7 @@
         </div>
       </div>
     </div>
-    <div class="work-title">
+    <div id="work-title" class="work-title">
       <h2>Work</h2>
     </div>
     <div class="work-div">
@@ -105,7 +108,7 @@
         </p>
       </div>
     </div>
-    <div class="about-div">
+    <div id="about-div" class="about-div">
       <h2>About</h2>
       <p>
         Soy un estudiante de Ingenieria de computacion en la Escuela Superior
@@ -133,7 +136,7 @@
       <img src="Used icons-images/Untitled.jpg" alt="sign" class="sign" />
     </div>
 
-    <footer class="footer">
+    <footer id="footer" class="footer">
       <div class="contact-div">
         <h2>Contact me.</h2>
         <h3>Danny Burneo</h3>
@@ -182,6 +185,9 @@
           />
           <button>SEND MESSAGE</button>
         </form>
+      </div>
+      <div class="video">
+        <h2>Presentacion</h2>
       </div>
     </footer>
   </body>
